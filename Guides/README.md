@@ -58,6 +58,6 @@ IEnumerator StartCountdown()
 }
 ```
 This will trigger the Game Over state when the timer hits zero.
-* The order of the code has been adjusted from the original forum post, as other iterations led to odd behaviour, such as the timer text not updating when the timer hit zero.
+  * The order of the code has been adjusted from the original forum post, as other iterations led to odd behaviour, such as the timer text not updating when the timer hit zero.
 
 3. Add `StartCoroutine(StartCountdown());` to `GameManager`'s `StartGame()` method.
