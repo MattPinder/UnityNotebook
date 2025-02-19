@@ -1,6 +1,7 @@
 # List of keywords (access modifiers, return types, etc.) and when to use them
 **Note**: This list is partial, primarily based on keywords encountered during the Unity Learn tutorials.
-* See [the Microsoft website](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/) for a more complete list.  
+* See [the Microsoft website](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/) for a more complete list.
+
 **Note 2**: This list currently considers only **variables** and **methods**; I'll update it as my own understanding improves.
 
 #### `public`
