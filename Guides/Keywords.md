@@ -23,7 +23,7 @@ Useful if you need to adjust values in the Inspector but don't want other script
 #### `protected`
 `protected int x;`  
 The variable is only accessible within its class (like private), or those inheriting from it (unlike private).
-* Use with variables only
+* Use with variables and methods
 
 #### `readonly`
 `public readonly int x;`  
