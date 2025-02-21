@@ -37,8 +37,9 @@ The value of a `const` is given straightaway, and is immutable afterwards (a 'co
 * Not used with methods
 
 #### `static`
-Use `static` for global keywords, e.g. a function that you want to exist all the time
-* [This section requires expansion]
+`public static MainManager Instance;`  
+Use `static` for global keywords, e.g. a function that you want to exist all the time without reference to a specific object
+* Examples include `Time.deltaTime` and `Vector3.forward`, with `Time`/`Vector3` being static classes and `deltaTime`/`forward` being static class members
 
 #### `void`
 `void SpawnObject()`  
