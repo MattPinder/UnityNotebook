@@ -9,22 +9,23 @@ This can often be accomplished by setting variables to `private`, so they cannot
 `public static MainManager Instance { get; private set; }`  
 Using **getters** and **setters** allows us to control 'read and write access' to a given variable, ad makes the variable a **property**.
 
-The `{ get; private set; }` syntax is the simplest type -- an **auto-implemented property** -- which makes the variable read-only; other classes can **get** the value, but the `private` keyword means it can only be **set** from within the class.
+The `{ get; private set; }` syntax is the simplest type - an **auto-implemented property** - which makes the variable read-only; other classes can **get** the value, but the `private` keyword means it can only be **set** from within the class.
 
 ## Setter validation
-Setters can also be used to restrict how a value is set; for this, a **backing field** is required -- "a private variable that stores the data exposed by the public property."
+Setters can also be used to restrict how a value is set; for this, a **backing field** is required - "a private variable that stores the data exposed by the public property."
 
 Example from Unity Learn: ensuring that a value can only be set as a positive number
 
 ```
-private float m_ProductionSpeed = 0.5f;	// Private backing field
-public float ProductionSpeed		// Public property
+private float m_ProductionSpeed = 0.5f;		// Private backing field
+public float ProductionSpeed			// Public property
 {
 	get { return m_ProductionSpeed; }	// The getter returns the backing field
 	set
 	{
 		if (value < 0.0f)
 		{
+			// Return an informative error if trying to set incorrectly
 			Debug.LogError("You can't set a negative production speed!");
 		}
 		else
