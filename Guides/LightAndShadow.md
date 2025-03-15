@@ -40,7 +40,7 @@ This emulates the sky and any surrounding environment (e.g. buildings, mountains
     * The Lighting tab is found under Window > Rendering > Lighting
 * Custom skybox Material settings:
   * **Sun** - None/Simple/High Quality sun orb
-  * ** Sun Size** - Slider for how large the sun appears (has no effect on brightness)
+  * **Sun Size** - Slider for how large the sun appears (has no effect on brightness)
   * **Atmosphere Thickness** - Slider for how much light is absorbed by the atmosphere
     * Low settings are all black, high settings are very red
   * **Sky Tint** - Adjusts the colour of the sky
@@ -66,14 +66,14 @@ Materials that give off light
 * Create a new material, and set Surface Options > Workflow Mode to **Specular**
 * Under Surface Inputs, enable the **Emission** property, and set the relevant colour and intensity
 
-## Baked Lighting
+## [Baked Lighting](https://learn.unity.com/pathway/creative-core/unit/lighting/tutorial/670fe65bedbc2a00765e1d7f?version=6)
 Baking a lightmap such that much of the light and shadow are pre-calculated, as opposed to realtime lighting that requires more resources at runtime to calculate frame-by-frame
 * GameObjects must be **Static** to be included in the baked lightmap
   * Non-Static objects cast and receive no shadows in the baked lightmap, for example
 * To bake a lightmap:
   * Under **Lighting > Scene**, create a new Lighting Settings Asset
   * At the bottom of the Lighting > Scene menu, click **Generate Lighting**
-* The following lightmap settings can be adjusted under **Lighting > Scene > Lightmapping Settings**
+* [The following lightmap settings](https://learn.unity.com/pathway/creative-core/unit/lighting/tutorial/670fe7e6edbc2a008aa0a838?version=6#670fe7e6edbc2a008aa0a841) can be adjusted under **Lighting > Scene > Lightmapping Settings**
   * **Lightmap Resolution** - Improves the resolution of the lightmap, at the cost of baketime
   * These three settings affect the amount of light in the scene:
     * **Albedo Boost** - Slider controlling the amount of light bouncing between surfaces
