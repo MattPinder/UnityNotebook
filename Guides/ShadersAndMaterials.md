@@ -38,7 +38,7 @@ Two methods of making a material look metallic, which can be toggled under **Sur
 * Under the Material's **Surface Options > Surface Type** dropdown, we can toggle between Opaque and Transparent
 * Enabling **Preserve Specular Lighting** shows realistic light reflections on the transparent surface
 * Setting **Render Face** to Both means both sides of the object will be shown (otherwise, we can see through to the missing back half!)
-* Transparency can be adjusted in the **alpha channel* of the Base Map
+* Transparency can be adjusted in the **alpha channel** of the Base Map
 * If a material's Base Map has sections intended to be transparent, enabling **Alpha Clipping** reveals a Threshold slider that lets us render these grey areas transparent (e.g. applying a leaf-shaped texture to an otherwise square Plane)
 
 ## [Bump Mapping](https://learn.unity.com/pathway/creative-core/unit/shaders-and-materials/tutorial/66fc3e33edbc2a0023b51792?version=6)
