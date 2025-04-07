@@ -8,8 +8,9 @@ Add a **Locomotion Mediator** component to the XR Rig object in the hierarchy; t
 
 ## Snap Turning
 ~Add a **Snap Turn Provider (Action-based)** component to the XR Rig, then drag the XR Rig’s Locomotion System component into the Snap Turn Provider’s **System** box~  
-Add a **Snap Turn Provider** component to the XR Rig, drag the XR Rig’s Locomotion **Mediator** component into the Snap Turn Provider’s Mediator box, then set the Left- and Right Hand Turn Inputs to **XRI LeftHand Locomotion/Snap Turn** and **XRI RightHand Locomotion/Snap Turn**, respectively
+Add a **Snap Turn Provider** component to the XR Rig, drag the XR Rig’s Locomotion **Mediator** component into the Snap Turn Provider’s Mediator box
+* Then, set the Left- and Right Hand Turn Inputs to **XRI LeftHand Locomotion/Snap Turn** and **XRI RightHand Locomotion/Snap Turn**, respectively
 
 ## Teleportation
-~Add a **Teleportation Provider** component to the XR Rig, then drag the XR Rig’s Locomotion System component into the Teleportation Provider’s **System** box~
+~Add a **Teleportation Provider** component to the XR Rig, then drag the XR Rig’s Locomotion System component into the Teleportation Provider’s **System** box~  
 Add a **Teleportation Provider** component to the XR Rig, then drag the XR Rig’s Locomotion Mediator component into the Teleportation Provider’s **Mediator** box
