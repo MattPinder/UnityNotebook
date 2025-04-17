@@ -10,6 +10,6 @@ This assumes that you already have an XR Rig set up as described in Unity's VR t
 * Note: The default for Haptic Output is Input Action Reference; if setting the Input System’s Haptic Device here, haptics won’t work and the console will log multiple errors
 
 ## Audio
-~Under each controller's **Ray/Direct Interactor** component, expand the **Audio Events** fold-out, check the relevant boxes to determine *when* there’s feedback, and set the relevant audio clip~
+~Under each controller's **Ray/Direct Interactor** component, expand the **Audio Events** fold-out, check the relevant boxes to determine *when* there’s feedback, and set the relevant audio clip~  
 Add a **Simple Audio Feedback** component to each controller, check the relevant boxes to determine *when* there’s feedback, and set the relevant audio clip
 * Audio Source can apparently be left blank
