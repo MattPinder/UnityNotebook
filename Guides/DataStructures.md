@@ -7,7 +7,7 @@ Arrays are represented by **square brackets**
 ### Defining arrays
 
 ```
-public string[] myArray;
+public string[] myArray = new string[];
 
 public string[] myArray = new string[] { "hello", "there", "General", "Kenobi" };
 ```
@@ -25,7 +25,7 @@ Lists require the namespace `System.Collections.Generic`
 ### Defining lists
 
 ```
-public List<string> myList;
+public List<string> myList = new List<string>();
 
 public List<string> myList = new List<string>() { "hello", "there", "General", "Kenobi };
 ```
@@ -43,7 +43,7 @@ Dictionaries require the namespace `System.Collections.Generic`
 ### Defining dictionaries
 
 ```
-public Dictionary<int, string> myDictionary;
+public Dictionary<int, string> myDictionary = new Dictionary<int, string>();
 
 public Dictionary<int, string> myDictionary = new Dictionary<int, string>()
 {
