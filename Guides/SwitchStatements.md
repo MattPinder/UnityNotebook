@@ -24,4 +24,4 @@ switch (someVariable)
 }
 ```
 
-These are often used with [enumerations](Enumarations.md).
+These are often used with [enumerations](Enumerations.md).
