@@ -12,7 +12,7 @@ By adjusting Unity's draw settings, we can create more realistic effects with th
  * Set **Sprite Sort Point** to **Pivot** (the default, Center, means that it draws sprites based on their relative midpoints, which may not always be desired)
  * Click **Open Sprite Editor**, set the **Pivot** to **Bottom Center**, and click **Apply**
 
-## [Tile sprites to avoid stretching]
+## [Tile sprites to avoid stretching](https://learn.unity.com/course/2d-beginner-adventure-game/unit/game-environment-and-physics/tutorial/create-decorative-objects-using-sprites?version=2022.3#64d4b9b9edbc2a62609f2a84)
 When resizing decorative sprites, it can sometimes be desirable to tile them, rather than stretching and distorting them
 
 1. Ensure the sprite prefab you're working with has its **Transform > Scale** set to **(1, 1, 1)**
