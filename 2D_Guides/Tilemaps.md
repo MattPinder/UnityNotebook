@@ -1,0 +1,33 @@
+# Tilemaps
+Information adapted from Unity's [2D Beginner: Adventure Game](https://learn.unity.com/course/2d-beginner-adventure-game?version=2022.3) tutorial
+
+## Terminology
+
+* **Tile**: An asset referencing a particular sprite
+* **Tileset**: An image file containing multiple sprites, which can be sliced after importing into Unity
+  * Also known as a **sprite sheet** or **sprite atlas**
+* **Tile palette**: A window/tab for laying out tiles
+* **Tilemap**: The layout of tiles in the scene
+
+## From Tileset to Tile Palette to Tilemap
+1. Import your tileset PNG file into Unity, and select it in the Project window
+2. In the Inspector:
+  a. Set **Sprite Mode** to **Multiple**
+  b. Set the **Pixels Per Unit** to an appropriate value such that the tile fits into the Scene view grid cell (try 64? 100?)
+  c. Click **Apply**, then open **Sprite Editor**
+3. In the Sprite Editor:
+  a. Open the **Slice** dropdown
+  b. Set **Type** to **Grid By Cell Count**
+  c. Set the **Column & Row** parameters such that the tileset is sliced correctly (previewed by a red grid on the image)
+  d. Click **Slice**, then **Apply**, and close the Sprite Editor
+  e. Check the Project window; there should be (column x row) sprites as children of the original image
+4. Open the **Window > 2D > Tile Palette** window (and dock it)
+  a. Open the **No Valid Palette* dropdown, select **Create New Tile Palette**, name the new palette, and click **Create**
+  b. Save the new palette in an appropriate directory
+  c. Drag the tileset (the original image) from the Project window into the Tile Palette window, and save in the previous directory
+  d. Repeat Step C for all relevant tiles
+5. In the Hierarchy:
+  a. Right-click and create **2D Object > Tilemap > Rectangular** (or whichever shape suits your project)
+  b. Select the new **Grid > Tilemap** child object, and set **Tilemap Renderer > Additional Settings > Order in Layer** to -10 (or a sufficiently large negative number), to ensure it is rendered *below* other entities in the scene
+  c. If you want to have multiple layers of tiles (e.g. if you have archways that the player should pass below), right-click the **Grid** parent object and create a new **2D Object > Tilemap > Rectangular** child object with a higher ** Order in Layer** value
+6. In the Tile Palette, ensure that the dropdown at the top of the palette is set to the correct tilemap before painting on the scene (to ensure you don't paint an archway *under* the player, for example)
