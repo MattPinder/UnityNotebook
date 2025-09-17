@@ -31,3 +31,11 @@ Information adapted from Unity's [2D Beginner: Adventure Game](https://learn.uni
  * Select the new **Grid > Tilemap** child object, and set **Tilemap Renderer > Additional Settings > Order in Layer** to -10 (or a sufficiently large negative number), to ensure it is rendered *below* other entities in the scene
  * If you want to have multiple layers of tiles (e.g. if you have archways that the player should pass below), right-click the **Grid** parent object and create a new **2D Object > Tilemap > Rectangular** child object with a higher ** Order in Layer** value
 6. In the Tile Palette, ensure that the dropdown at the top of the palette is set to the correct tilemap before painting on the scene (to ensure you don't paint an archway *under* the player, for example)
+
+## Tilemap Collision
+Adding collision to certain tiles can prevent the player from walking on water, walls, etc.
+1. Select the Tilemap in the Hierarchy, and add both a **Tilemap Collider 2D** and a **Composite Collider 2D** component
+* This will also add a Rigidbody 2D component, as a requirement of Composite Collider 2D
+2. In the Tilemap Collider 2D component, set **Composite Operation** to **Merge**
+3. In the Rigidbody 2D component, set **Body Type** to **Static**
+4. In the Project window, select all tiles that should **not** have collision, and set the **Collider Type** dropdown to **None** in the Inspector (by default, tiles will have Sprite collision)
