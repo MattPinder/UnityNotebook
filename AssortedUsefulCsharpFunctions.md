@@ -23,3 +23,54 @@ public void SomeFunction()
 * A `return` statement terminates execution of a function
 * In the above example, if the condition is met, then `DoSomething()` and `DoSomethingElse()` will not be executed, as `SomeFunction()` will terminate
 * **How is this any better than an `if (!condition){DoSomething()}` function?**
+
+## [Static class members](https://learn.unity.com/course/2d-beginner-adventure-game/unit/heads-up-ui-display/tutorial/display-character-health-on-the-ui?version=2022.3#64d4e6b4edbc2a6b0b70610a)
+If there is only one GameObject with a given script attached (e.g. a UI handler script), then we can make a static member of the class so all references are to that instance.
+* **Clarify the benefits of this!**
+
+```
+using UnityEngine;
+
+public class LoremIpsum : MonoBehaviour
+{
+   public static LoremIpsum instance { get; private set; }
+
+   private void Awake()
+   {
+      instance = this;
+   }
+
+   public void SomeFunction()
+   {
+	…
+   }
+}
+```
+* In this first code block, we save [`this`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/this) (the current instance of the `LoremIpsum` class) to the `instance` property
+
+```
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+   …
+
+   private void SomeOtherFunction()
+   {
+      LoremIpsum.instance.SomeFunction();
+   }
+}
+```
+* In this second code block, we access the static `LoremIpsum` instance's `SomeFunction()` function
+
+
+
+
+
+
+
+
+
+
+
+
