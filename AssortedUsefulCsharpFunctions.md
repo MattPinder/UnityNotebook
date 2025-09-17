@@ -22,3 +22,4 @@ public void SomeFunction()
 ```
 * A `return` statement terminates execution of a function
 * In the above example, if the condition is met, then `DoSomething()` and `DoSomethingElse()` will not be executed, as `SomeFunction()` will terminate
+* **How is this any better than an `if (!condition){DoSomething()}` function?**
