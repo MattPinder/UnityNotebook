@@ -17,5 +17,5 @@ Guide to using Unity's [**Cinemachine**](https://docs.unity3d.com/Packages/com.u
 * These points can be manually tidied up by expanding the **Polygon Collider 2D > Points > Paths > Element 0** dropdown and manually adjusting the points' coordinates
 4. In the 2D Camera's **Cinemachine Confiner 2D** component, drag the previously-defined Polygon Collider 2D GameObject into the **Bounding Shape 2D** field
 5. Add a new layer (e.g. 'Confiner') to the Polygon Collider 2D GameObject
-6. Use the [LayerCollisionMatrix](REAMD.md) to disable the 'Confiner' layer's interaction with **all** other layers
+6. Use the [LayerCollisionMatrix](README.md) to disable the 'Confiner' layer's interaction with **all** other layers
 
