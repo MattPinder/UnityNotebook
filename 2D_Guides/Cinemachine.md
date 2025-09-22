@@ -5,7 +5,7 @@ Guide to using Unity's [**Cinemachine**](https://docs.unity3d.com/Packages/com.u
 ## Setting up the camera
 
 1. Ensure that the Cinemachine package is installed via **Package Manager**
-2. Create a **Cinemachine > 2D Camera** in the Hierarchy
+2. Create a **Cinemachine > Targeted Cameras > 2D Camera** in the Hierarchy
 3. In the 2D Camera's **Cinemachine Camera** component, expand the **Lens** menu and set **Orthographic Size** for the desired field of view (the Unity tutorial suggests 5)
 4. In the 2D Camera's **Cinemachine Camera** component, drag the **PlayerCharacter** from the Hierarchy to **Tracking Target**
 

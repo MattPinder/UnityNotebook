@@ -22,7 +22,7 @@ Information adapted from Unity's [2D Beginner: Adventure Game](https://learn.uni
  * Click **Slice**, then **Apply**, and close the Sprite Editor
  * Check the Project window; there should be (column x row) sprites as children of the original image
 4. Open the **Window > 2D > Tile Palette** window (and dock it)
- * Open the **No Valid Palette* dropdown, select **Create New Tile Palette**, name the new palette, and click **Create**
+ * Open the **No Valid Palette** dropdown, select **Create New Tile Palette**, name the new palette, and click **Create**
  * Save the new palette in an appropriate directory
  * Drag the tileset (the original image) from the Project window into the Tile Palette window, and save in the previous directory
  * Repeat Step C for all relevant tiles
