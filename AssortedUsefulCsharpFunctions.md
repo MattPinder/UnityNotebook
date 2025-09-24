@@ -63,7 +63,29 @@ public class PlayerController : MonoBehaviour
 ```
 * In this second code block, we access the static `LoremIpsum` instance's `SomeFunction()` function
 
+## Start an animation from a random frame
+If you have multiple GameObjects with an idle animation, and want them all to start out-of-sync so they don't idle in unison, attach the script below to each of the GameObjects.  
+Code from the [Unity forums](https://discussions.unity.com/t/using-cycle-offset-feature-inside-of-animator/172679/3)
+```
+using UnityEngine;
 
+// Script for randomising the starting frame of an object's idle animation
+// Code from https://discussions.unity.com/t/using-cycle-offset-feature-inside-of-animator/172679/3
+public class RandomStartingFrame : MonoBehaviour
+{
+    private Animator m_Animator;
+
+    void Start()
+    {
+        m_Animator = GetComponent<Animator>();
+
+        // Set a random part of the animation to start from
+	// (replace 'Floating' with the name of your idle animation)
+        float randomStartPos = Random.Range(0, m_Animator.GetCurrentAnimatorStateInfo(0).length);
+        m_Animator.Play("Floating", 0, randomStartPos);
+    }
+}
+```
 
 
 
