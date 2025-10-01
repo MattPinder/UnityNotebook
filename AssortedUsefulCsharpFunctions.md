@@ -87,7 +87,27 @@ public class RandomStartingFrame : MonoBehaviour
 }
 ```
 
+## [Time.timeScale](https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Time-timeScale.html)
+The `Time.timeScale` function lets us adjust how fast time passes in the application. This is useful for pause menus:
+```
+public void PauseGame()
+{
+   // Pause time
+   Time.timeScale = 0;
 
+   // Show the pause screen
+   pauseScreen.SetActive(true);
+}
+
+public void UnpauseGame()
+{
+   // Unpause time
+   Time.timeScale = 1;
+
+   // Hide the pause screen
+   pauseScreen.SetActive(false);
+}
+```
 
 
 
