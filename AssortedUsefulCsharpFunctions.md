@@ -109,10 +109,24 @@ public void UnpauseGame()
 }
 ```
 
+## Playing an animation before an object is destroyed
+If an animation is coded to play directly before a GameObject is destroyed, the destruction will interrupt the animation
+```
+m_Animator.SetTrigger("SomeTrigger");
+Destroy(gameObject);
+```
 
-
-
-
-
-
-
+This can be counteracted by overriding an aspect of the animation state ([as described here](https://discussions.unity.com/t/delete-object-after-animation-2d/100143))
+1. Create a new C# script called `DestroyOnExit` or similar, with the following code
+```
+public class DestroyOnExit : StateMachineBehaviour
+{
+    public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        Destroy(animator.gameObject, stateInfo.length);
+    }
+}
+```
+This will set the animated GameObject to be destroyed after the length of time of the animation
+2. In the GameObject's Animator, select the relevant state, click **Add Behaviour** in the Inspector, and add the new `DestroyOnExit` script
+3. In the GameObject's main controller script, ensure that you remove `Destroy(gameObject);`, as this is now handled by the Animator
